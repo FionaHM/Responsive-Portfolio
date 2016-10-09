@@ -8,7 +8,7 @@ html, body {
 }
 body {
 	/*width: 100%; /*set to 100% then set main content and header to 960px */
-	min-width: 1160px;
+	min-width: 1200px;
 	margin: 10px 10px 10px 10px;
 	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	/*font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
@@ -96,7 +96,7 @@ p {
 	margin-left: 20px;
 }
 #bio-and-content-section{
-	width: 650px;
+	width: 650px; 
 	height: 700px;
 	float: left;
 	margin-right: 20px;
@@ -167,7 +167,7 @@ p {
 
 }
 #connect-details{
-    width: 270px;
+    width: 270px; 
     margin-top: 20px;
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
@@ -353,5 +353,145 @@ input#submit-button:hover {
  /* .push source http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
 .footer, .push {
 	height: 4em;
+}
+
+/* media queries for responsive design */
+
+/* medium devices have px sz from 768px to 980px */
+ @media only screen and (max-width : 980px) {
+
+    }
+ /* Small devices have px sz from 640px to 768px */
+ @media only screen and (max-width : 768px) {
+
+
+    }
+ /* extra small devices have px sz below 640px */
+ @media only screen and (max-width : 640px) {
+ 
+ 		body {
+ 			width: 100%;
+			max-width: 640px;
+ 		    
+ 		}
+
+		#header {
+    		position: static;
+    		top: 0px;
+    		width: 100%;
+    		max-width: 640px;
+    		min-width: 600px;
+    		height: inherit;
+
+		}
+
+		#left-side-header { 
+			/*min-width: 600px; */
+			float: none;
+			width: 100%;
+			max-width: 640px;
+
+
+		}
+		#main-logo {
+    		width: 100%;
+			max-width: 640px;
+    	}
+
+		#right-side-header {
+			/*min-width: 600px;*/
+			margin-top:103px;
+			width: 100%;
+			float: none;	
+		    max-width: 640px;
+		    height: 100px;
+		}
+
+		#navigation {
+			width: 100%;
+			max-width: 640px;
+			min-width: 600px;
+			padding-right: 75px;
+    		padding-left: 145px;
+		    position: absolute;
+		    float: none;
+		    top: 103px;
+		    left: 0px;
+		}
+		#about, #portfolio, #contact {
+			float: left;
+			margin-left: 50px;
+			margin-right: 25px;
+			padding-top: 7.5px;
+			padding-bottom: 7.5px;
+		}
+
+		.page-indent {
+		    margin-left: 0px;
+		}
+
+		#content {
+			width: 100%;
+			margin-right: 0px; 
+			min-height: 1000px;
+			margin-bottom: 20px;
+			margin-top: 0px;
+    		min-width: 600px;
+			padding-right: 20px;
+    		padding-left: 20px;
+    		max-width: 600px;    
+		}
+
+		#bio-and-content-section{
+			width: 100%;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			
+		}
+		#about-me {
+			max-height: 700px;
+			width: 100%;
+			max-width: 536px;
+			text-overflow: ellipsis;
+			overflow: scroll; 
+		}
+
+		.wrapper {
+			width: 100%;
+			max-width: 640px;
+		}
+
+		.footer{
+			width: 100%;
+			max-width: 640px;
+		}
+
+		#ways-to-connect{
+			padding-left: 160px;
+		}
+   
+
+		#connect-details {
+		    width: 100%;
+    		max-width: 536px;
+    		padding-left: 30px;
+    		padding-right: 30px;
+    		margin-left: 0px;
+  		 }
+    	#article-p-1{
+    		display: none;
+    	}
+    	#profile-img {
+			width: 600px;
+			height: 100px;
+			float: none;
+		    margin: 0px 20px 10px 0px;
+
+ 			}
+ 		#format-article {
+			margin-top: 0px;
+			
+		}
+}
 }
 
