@@ -9,7 +9,7 @@
         <link type="text/css" rel="stylesheet" href="assets/css/reset.css"/> 
         <!-- added in some google fonts - put them before my style.css so that they are available use, but after the reset.html. -->
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="assets/css/style_new.css"/>
     </head>
     <body> <!-- added 10 px on left and right margins -->
         <div class="wrapper"> <!--added wrapper class for sticky footer -->
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <navigation id="right-side-header"> <!-- 270px wide -->
-                         <div id="navigation">
+                    <div id="navigation">
                     <!--div's for naviagation buttons - these need to float-->
                         <div id="about"><h5><a href="index.html">About</a></h5></div>
                         <div id="portfolio"><h5><a href="portfolio.html">Portfolio</a></h5></div>
@@ -30,19 +30,59 @@
                     </div>
                 </navigation>
             </header>
-            <div id="content">
-                <section  class="page-indent" id="bio-and-content-section"> <!--width 650px -->
+            <div class="content" id="portfolio-content">
+                <div  class="page-indent content-section" id="portfolio-content-section"> <!--width 650px -->
                      <div class="page-content-layout" id="my-portfolio">
                         <div class="underlines"><h2>Portfolio</h2></div>
                         <div id="format-portfolio">
-                            <div class="portfolio-item"><a href="#"><img src="assets/images/project_1.jpg" alt="Project 1"><div class="portfolio-title"><h4>Project 1</h4></div></a></div>
-                            <div class="portfolio-item"><a href="#"><img src="assets/images/project_2.jpg" alt="Project 2"><div class="portfolio-title"><h4>Project 2</h4></div></a></div>
-                            <div class="portfolio-item"><a href="#"><img src="assets/images/project_3.jpg" alt="Project 3"><div class="portfolio-title"><h4>Project 3</h4></div></a></div>
-                            <div class="portfolio-item"><a href="#"><img src="assets/images/project_4.jpg" alt="Project 4"><div class="portfolio-title"><h4>Project 4</h4></div></a></div>
-                            <div class="portfolio-item"><a href="#"><img src="assets/images/project_5.jpg" alt="Project 5"><div class="portfolio-title"><h4>Project 5</h4></div></a></div>
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img src="assets/images/project_1.jpg" alt="Project 1" class="project">
+                                    <img src="assets/images/project_640_1.jpg" alt="Project 1" class="project-640">
+                                    <div class="portfolio-title">
+                                        <h4>Project 1</h4>
+                                    </div>
+                                </a>
+                            </div>
+                              <div class="portfolio-item">
+                                <a href="#">
+                                    <img src="assets/images/project_2.jpg" alt="Project 2" class="project">
+                                    <img src="assets/images/project_640_2.jpg" alt="Project 2" class="project-640">
+                                    <div class="portfolio-title">
+                                        <h4>Project 2</h4>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="portfolio-item">
+                                <a href="#">
+                                    <img src="assets/images/project_3.jpg" alt="Project 3" class="project">
+                                    <img src="assets/images/project_640_3.jpg" alt="Project 3" class="project-640">
+                                    <div class="portfolio-title">
+                                        <h4>Project 3</h4>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="portfolio-item">
+                                <a href="#">
+                                    <img src="assets/images/project_4.jpg" alt="Project 4" class="project">
+                                    <img src="assets/images/project_640_4.jpg" alt="Project 4" class="project-640">
+                                    <div class="portfolio-title">
+                                        <h4>Project 4</h4>
+                                    </div>
+                                </a>
+                            </div>
+                              <div class="portfolio-item">
+                                <a href="#">
+                                    <img src="assets/images/project_5.jpg" alt="Project 5" class="project">
+                                    <img src="assets/images/project_640_5.jpg" alt="Project 5" class="project-640">
+                                    <div class="portfolio-title">
+                                        <h4>Project 5</h4>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
                 <!-- margin of 40px: total 960px for main section -->
                 <aside id="connect-details"> <!--width 270px -->
                         <div class="underlines" id="connect-title">
