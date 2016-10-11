@@ -79,10 +79,8 @@ p {
 }
 
 #left-side-header {
-	
 	max-width: 100%;
 	float: left;
-	
 }
 #right-side-header {
 	
@@ -122,8 +120,7 @@ p {
 	width: 150px;
 	height: 150px;
 	float: left;
-    margin: 10px 20px 10px 0px;
- 
+	margin: 10px 20px 10px 0px;
 }
 
 #profile-img-640 {
@@ -271,8 +268,10 @@ input#submit-button:hover {
 	display: none;
 }
 .content-section{
-			min-height: 700px;
+			/* height: 800px; */
 			float: left;
+			min-height: 80%;
+			height: auto;
 		}
 .input-box-format {
 
@@ -379,7 +378,7 @@ input#submit-button:hover {
  @media only screen and (max-width: 640px) {
  
  		body {
- 			min-width: 640px;
+ 			min-width: 100%;
  		}
  		/* IDs */
 		#header {
@@ -388,41 +387,55 @@ input#submit-button:hover {
     		width: 100%;
     		display:  block;
     		min-width: 100%;
-    		min-width: 600px;
+    		/* min-width: 100%; */
     		position: static;
-    		height: 170px;
-  		}
+    		min-height: 10%;
+    		height: auto;
+        }
 		#left-side-header {
 			min-width: 600px;
 			margin-right: 0px;
 			display: block;
-			width: 100%;
+			min-width: 100%;
+			height: auto;
+			min-height: 5%;
 		}
 		#main-logo {
     		width: 100%;
     		display:  block;
     	}
 		#right-side-header {
-			min-width: 600px;
+			min-width: 100%;
 			width: 100%;
 			margin-left: 0px;
+			min-height: 100%;
+			height: auto;
+			min-height: 5%;
 		}
 		#navigation {
-			width: 100%;
+			min-width: 100%;
 			padding: 20px 0 20px 0px;
 			display:  block;
+			min-height: 100%;
+			height: auto;
 		}
 		#about, #portfolio, #contact {
 			float: left;
-			width: 30%;
+			min-width: 28%;
+			min-height: 100%;
 		}
 		#about-me {
-			min-height: 700px;
+			height: auto;
+			/* min-height: 70%; */
 			width: 87%;
 			margin-left: 20px;
 			padding-right: 20px;
 			margin-bottom: 20px;
 			padding-left: 20px;
+			/* min-height: auto; */
+			height: auto;
+			min-height: 750px;
+			overflow: auto;
 		}
 		#my-portfolio{
 			width: 87%;
@@ -431,6 +444,7 @@ input#submit-button:hover {
 			padding-left:  20px;
 			min-height: 1350px;
 			margin-left: 20px;
+			height: auto;
 		}
 		#ways-to-connect{
 			padding-left: 30%;
@@ -446,6 +460,7 @@ input#submit-button:hover {
 		    padding-right: 20px;
 		    padding-left: 20px;
 		    min-height: 150px;
+		    height: auto;
 		    margin-right: 0px;
 		    padding-right: 20px;
 		    margin-bottom: 20px;
@@ -472,33 +487,54 @@ input#submit-button:hover {
 		}
 		#format-portfolio {
 				min-height: 1250px;
-				min-width: 500px;
+				/* min-width: 500px; */
 				width: 100%;
 				padding: 0px;
 				margin: auto;
+				height: auto;
 		}
+		#bio-and-content-section {
+    			height: auto;
+    			min-width: 100%;
+ 		}
+ 		#portfolio-content-section {
+ 			    height: auto;
+ 			    width: 100%;
+ 		}
 		#portfolio-content {
 				min-height: 1600px;
-				width: 100%;
+				/* width: 100%; */
 				/* margin: auto; */
-				min-width: 80%;
+				min-width: 100%;
 				padding-left: 0px;
 				padding-right: 0px;
+				height: auto;
 		}
 		#connect-title {
 			width:  100%;
 		}
-		
+		#contact-me{
+			margin-left: 20px;
+			width: 84%;
+			height: auto;
+			min-height: 475px;
+			/* padding-left: 0; */
+		}
+
 /* Classes */
+		.input-box-format {
+			max-width: 100%;
+		}
 		.page-indent {
 		    margin-left: 0px;
 		}
 		.content {
 			display: block;
-			width: 100%;
+			/* width: 100%; */
 			min-width: 100%;
 			margin-right: 0px;
-			min-height: 950px;
+			min-height: 1000px;
+			height: auto;
 			padding-bottom: 20px;
 			margin-top: 0px;
 			padding-top: 0px;
@@ -506,16 +542,14 @@ input#submit-button:hover {
 		.portfolio-item {
 		  	width: 100%;
 		  	margin-left: 0px;
-		  	min-width: 440px;
+		  	width: 90%;
 		  	display: block;
 		  	height: 200px;
 		  	width: 95%;
-		  	margin-left: 0px;
+		  	margin-left: 10px;
+		  	/* height: auto; */
 		}
-		.wrapper {
-			width: 100%;
-			display: block;
-		}
+
 		.footer{
 			width: 100%;
 			min-width: 600px;
@@ -534,6 +568,10 @@ input#submit-button:hover {
 			height: 100%;
 		}
 
+		.footer {
+			min-width: 100%;
+			height: auto;
+		}
 
 }
 
