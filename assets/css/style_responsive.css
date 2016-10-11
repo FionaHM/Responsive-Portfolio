@@ -5,7 +5,6 @@
 /* Tags - set here after loading reset.html */
 html, body {
 	width: 100%;
-	/* max-width: 1200px; */
 }
 body {
 	margin: 10px 10px 10px 10px;
@@ -20,7 +19,6 @@ h2{
 	font-size: 25px;
 	font-weight: bold;
 	color: #4aaaa5;
-	/*font-family: "Georgia", "Times", "Times New Roman", "Serif"; */
 	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
 	text-align: center;
 	display: block;
@@ -30,14 +28,12 @@ h3{
 	font-weight: bold;
 	color: #4aaaa5;
 	text-align: center;
-	/*font-family: "Georgia", "Times", "Times New Roman", "Serif"; */
 	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
 
 }
 h4{
 	font-size: 16px;
 	color: #2c2a2a;
-	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	
 	line-height: 3;
 	line-height: 2;
@@ -47,17 +43,14 @@ h4{
 h5{
 	font-size: 15px;
 	color: #2c2a2a;
-	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
 }
 h6{
 	font-size: 14px;
 	color: #ffffff;
-	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
 }
 p {
-    /* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
 	font-size: 15px;
 	color : #777777;
@@ -77,21 +70,15 @@ p {
 	overflow: visible;
 	z-index: 100;
 }
-
 #left-side-header {
 	max-width: 100%;
 	float: left;
 }
 #right-side-header {
-	
-	width: 1 00;
 
 	display: inline-block;
-
 	margin-left: 430px;
 }
-
-
 #main-logo{
 	width: 250px;
 	text-align: center;	
@@ -115,37 +102,30 @@ p {
 	padding-top: 7.5px;
 	padding-bottom: 7.5px;
 }
-
+/* main content section */
+/*index.html*/
 #profile-img {
 	width: 150px;
 	height: 150px;
 	float: left;
 	margin: 10px 20px 10px 0px;
 }
-
 #profile-img-640 {
 	display: none;
 	
-}
-
-
-#contact-me {
-    height: 500px;
-    max-height: 600px
-}
-
-#my-portfolio {
-	height: 700px;
 }
 #about-me {
 	max-height: 700px;
 	text-overflow: ellipsis;
 
 }
-
 #format-article {
 	margin-top: 20px;
 	padding-top: 10px;
+}
+/* portfolio.html */
+#my-portfolio {
+	height: 700px;
 }
 #format-portfolio {
 	margin-top: auto;
@@ -153,6 +133,8 @@ p {
 	width: 500px;
 	padding: 15px 50px;
 }
+
+/* connection section */
 #connect-details{
     width: 270px;
     margin-top: 20px;
@@ -166,19 +148,12 @@ p {
     border-width: 2px;
     float: left;
 	}
-
-#connect-title{
-	
-}
-
 #ways-to-connect{
 	padding-left: 30px;
 	padding-top: 10px;
 	height: 70px;
 	
 }
-
-
 #linkedin, #github, #other {
 		width: 60px;
 		height: 60px;
@@ -192,6 +167,12 @@ p {
 	text-align: center;
 	color: #ffffff;
 	min-width: 100%;
+}
+
+/* contact.html */
+#contact-me {
+    height: 500px;
+    max-height: 600px
 }
 #name {
  width: 587px;
@@ -216,7 +197,6 @@ p {
     margin: auto;
 }
 #submit-button {
-	
 	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
  	font-size: 15px;
  	color: #ffffff;
@@ -238,8 +218,6 @@ a{
     color: #2c2a2a;
 }
 /* Pseudo classes */
-
-
 
 /* mouse over link */
 a:hover {
@@ -267,14 +245,8 @@ input#submit-button:hover {
 .project-640 {
 	display: none;
 }
-.content-section{
-			/* height: 800px; */
-			float: left;
-			min-height: 80%;
-			height: auto;
-		}
-.input-box-format {
 
+.input-box-format {
  	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
 	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
  	font-size: 15px;
@@ -292,6 +264,11 @@ input#submit-button:hover {
 	width: 100%;
 	min-height: 800px;
 	min-width: 1200px;
+}
+.content-section{
+	float: left;
+	min-height: 80%;
+	height: auto;
 }
 .portfolio-title{
     height: 32px;
@@ -371,16 +348,11 @@ input#submit-button:hover {
     }
  /* Small devices have px sz from 640px to 768px */
  @media only screen and (max-width : 768px) {
-
-
-    }
- /* extra small devices have px sz below 640px */
- @media only screen and (max-width: 640px) {
- 
- 		body {
+		body {
  			min-width: 100%;
  		}
  		/* IDs */
+ 		/* Header and Navigation sections */
 		#header {
     		position: static;
     		top: 0px;
@@ -424,28 +396,7 @@ input#submit-button:hover {
 			min-width: 28%;
 			min-height: 100%;
 		}
-		#about-me {
-			height: auto;
-			/* min-height: 70%; */
-			width: 87%;
-			margin-left: 20px;
-			padding-right: 20px;
-			margin-bottom: 20px;
-			padding-left: 20px;
-			/* min-height: auto; */
-			height: auto;
-			min-height: 750px;
-			overflow: auto;
-		}
-		#my-portfolio{
-			width: 87%;
-			margin-right: 0px;
-			padding-right: 20px;
-			padding-left:  20px;
-			min-height: 1350px;
-			margin-left: 20px;
-			height: auto;
-		}
+/* right hand side bar with connection information */
 		#ways-to-connect{
 			padding-left: 30%;
 		}
@@ -466,9 +417,27 @@ input#submit-button:hover {
 		    margin-bottom: 20px;
 		    padding-left: 20px;
 		   }
+/* For index.html */
+		#bio-and-content-section {
+    		height: auto;
+    		min-width: 100%;
+ 		}
+		#about-me {
+			height: auto;
+			width: 87%;
+			margin-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			height: auto;
+			min-height: 750px;
+			overflow: auto;
+		}
+		#format-article {
+			margin-top: 0px;	
+		}
     	#article-p-1{
     		display: none;
-
     	}
     	#profile-img-640{
 			width: 100%;
@@ -476,31 +445,12 @@ input#submit-button:hover {
 			display: block;
 			margin: 0px 20px 10px 0px;
 			}
-
 		#profile-img {
 			display: none;
-	
 		}
- 		#format-article {
-			margin-top: 0px;
-			
-		}
-		#format-portfolio {
-				min-height: 1250px;
-				/* min-width: 500px; */
-				width: 100%;
-				padding: 0px;
-				margin: auto;
-				height: auto;
-		}
-		#bio-and-content-section {
-    			height: auto;
-    			min-width: 100%;
- 		}
- 		#portfolio-content-section {
- 			    height: auto;
- 			    width: 100%;
- 		}
+
+ 		
+/* For portfolio.html */
 		#portfolio-content {
 				min-height: 1600px;
 				/* width: 100%; */
@@ -510,6 +460,28 @@ input#submit-button:hover {
 				padding-right: 0px;
 				height: auto;
 		}
+		#portfolio-content-section {
+ 			    height: auto;
+ 			    width: 100%;
+ 		}
+		#my-portfolio{
+			width: 87%;
+			margin-right: 0px;
+			padding-right: 20px;
+			padding-left:  20px;
+			min-height: 1350px;
+			margin-left: 20px;
+			height: auto;
+		}
+		#format-portfolio {
+				min-height: 1250px;
+				/* min-width: 500px; */
+				width: 100%;
+				padding: 0px;
+				margin: auto;
+				height: auto;
+		}
+ 		
 		#connect-title {
 			width:  100%;
 		}
@@ -518,7 +490,6 @@ input#submit-button:hover {
 			width: 84%;
 			height: auto;
 			min-height: 475px;
-			/* padding-left: 0; */
 		}
 
 /* Classes */
@@ -547,14 +518,8 @@ input#submit-button:hover {
 		  	height: 200px;
 		  	width: 95%;
 		  	margin-left: 10px;
-		  	/* height: auto; */
 		}
 
-		.footer{
-			width: 100%;
-			min-width: 600px;
-			display: block;
-		}
 		.portfolio-title {
 			width: 100%;
 			top: 130px;
@@ -571,6 +536,205 @@ input#submit-button:hover {
 		.footer {
 			min-width: 100%;
 			height: auto;
+			width: 100%;
+			display: block;
+		}
+
+
+    }
+ /* extra small devices have px sz below 640px */
+ @media only screen and (max-width: 640px) {
+ 
+ 		body {
+ 			min-width: 100%;
+ 		}
+ 		/* IDs */
+ 		/* Header and Navigation sections */
+		#header {
+    		position: static;
+    		top: 0px;
+    		width: 100%;
+    		display:  block;
+    		min-width: 100%;
+    		/* min-width: 100%; */
+    		position: static;
+    		min-height: 10%;
+    		height: auto;
+        }
+		#left-side-header {
+			min-width: 600px;
+			margin-right: 0px;
+			display: block;
+			min-width: 100%;
+			height: auto;
+			min-height: 5%;
+		}
+		#main-logo {
+    		width: 100%;
+    		display:  block;
+    	}
+		#right-side-header {
+			min-width: 100%;
+			width: 100%;
+			margin-left: 0px;
+			min-height: 100%;
+			height: auto;
+			min-height: 5%;
+		}
+		#navigation {
+			min-width: 100%;
+			padding: 20px 0 20px 0px;
+			display:  block;
+			min-height: 100%;
+			height: auto;
+		}
+		#about, #portfolio, #contact {
+			float: left;
+			min-width: 28%;
+			min-height: 100%;
+		}
+/* right hand side bar with connection information */
+		#ways-to-connect{
+			padding-left: 30%;
+		}
+		#connect-details {
+		    min-width: 100%%;
+		    display: block;
+		    width: 87%;
+		    display: block;
+		    margin-right: 0px;
+		    margin-bottom: 0px;
+		    margin-right: 20px;
+		    padding-right: 20px;
+		    padding-left: 20px;
+		    min-height: 150px;
+		    height: auto;
+		    margin-right: 0px;
+		    padding-right: 20px;
+		    margin-bottom: 20px;
+		    padding-left: 20px;
+		   }
+/* For index.html */
+		#bio-and-content-section {
+    		height: auto;
+    		min-width: 100%;
+ 		}
+		#about-me {
+			height: auto;
+			width: 87%;
+			margin-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			height: auto;
+			min-height: 750px;
+			overflow: auto;
+		}
+		#format-article {
+			margin-top: 0px;	
+		}
+    	#article-p-1{
+    		display: none;
+    	}
+    	#profile-img-640{
+			width: 100%;
+			height: 200px;
+			display: block;
+			margin: 0px 20px 10px 0px;
+			}
+		#profile-img {
+			display: none;
+		}
+
+ 		
+/* For portfolio.html */
+		#portfolio-content {
+				min-height: 1600px;
+				/* width: 100%; */
+				/* margin: auto; */
+				min-width: 100%;
+				padding-left: 0px;
+				padding-right: 0px;
+				height: auto;
+		}
+		#portfolio-content-section {
+ 			    height: auto;
+ 			    width: 100%;
+ 		}
+		#my-portfolio{
+			width: 87%;
+			margin-right: 0px;
+			padding-right: 20px;
+			padding-left:  20px;
+			min-height: 1350px;
+			margin-left: 20px;
+			height: auto;
+		}
+		#format-portfolio {
+				min-height: 1250px;
+				/* min-width: 500px; */
+				width: 100%;
+				padding: 0px;
+				margin: auto;
+				height: auto;
+		}
+ 		
+		#connect-title {
+			width:  100%;
+		}
+		#contact-me{
+			margin-left: 20px;
+			width: 84%;
+			height: auto;
+			min-height: 475px;
+		}
+
+/* Classes */
+		.input-box-format {
+			max-width: 100%;
+		}
+		.page-indent {
+		    margin-left: 0px;
+		}
+		.content {
+			display: block;
+			/* width: 100%; */
+			min-width: 100%;
+			margin-right: 0px;
+			min-height: 1000px;
+			height: auto;
+			padding-bottom: 20px;
+			margin-top: 0px;
+			padding-top: 0px;
+		}		
+		.portfolio-item {
+		  	width: 100%;
+		  	margin-left: 0px;
+		  	width: 90%;
+		  	display: block;
+		  	height: 200px;
+		  	width: 95%;
+		  	margin-left: 10px;
+		}
+
+		.portfolio-title {
+			width: 100%;
+			top: 130px;
+		}
+		.project {
+			display: none;
+		}
+		.project-640 {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.footer {
+			min-width: 100%;
+			height: auto;
+			width: 100%;
+			display: block;
 		}
 
 }
