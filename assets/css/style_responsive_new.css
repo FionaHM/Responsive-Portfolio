@@ -8,7 +8,8 @@ html, body {
 }
 body {
 	margin: 10px 10px 10px 10px;
-	min-width: 1200px;}
+	/*min-width: 1200px; */
+}
 h1{
 	font-size: 30px;
 	font-weight: bold;
@@ -132,6 +133,7 @@ p {
 /* portfolio.html */
 #my-portfolio {
 	height: 700px;
+
 }
 #format-portfolio {
 	margin-top: auto;
@@ -269,7 +271,7 @@ input#submit-button:hover {
 	background-color:  #f8f5f5;
 	width: 100%;
 	min-height: 800px;
-	min-width: 1200px;
+	min-width: 1200px; 
 }
 .content-section{
 	float: left;
@@ -358,14 +360,16 @@ input#submit-button:hover {
  		/* IDs */
  		#header {
     		position: static;
-
+    		width: 100%;
+    		min-width: 100%;
     	}
     	#left-side-header {
 			width: 40%;
 		}
 		#right-side-header {
-			width: 50%;
-			margin-left: 20px;
+			width: 40%;
+			margin-left: 40px;
+			float: right;
 		}
 
  		#article-p-1{
@@ -389,15 +393,16 @@ input#submit-button:hover {
 		}
 		#bio-and-content-section {
 			min-height: 900px;
-			width: 40%;
+			width: 50%;
+			float: left;
+			margin-right: 0px;
 		}
 		#about-me {
 			width: 80%;
 			min-height: 900px;
 		}
 		#connect-details {
-		    width: 45%%;
-
+		    width: 30%;
 		}
 		/* For portfolio.html */
 		#portfolio-content {
@@ -409,15 +414,15 @@ input#submit-button:hover {
 		}
 		#portfolio-content-section {
  			height: auto;
- 			width: 100%;
+ 			width: 50%;
  		}
 		#my-portfolio{
 			width: 87%;
 			margin-right: 0px;
+			margin-left: 0px;
 			padding-right: 20px;
 			padding-left:  20px;
 			min-height: 1350px;
-			margin-left: 20px;
 			height: auto;
 		}
 		#format-portfolio {
@@ -426,6 +431,12 @@ input#submit-button:hover {
 			padding: 0px;
 			margin: auto;
 			height: auto;
+		}
+		#contact-me {
+			width: 80%;
+		}
+		#name, #email, #message {
+			width: 100%;
 		}
  		
 
@@ -437,7 +448,7 @@ input#submit-button:hover {
 			padding-bottom: 20px;
 			margin-top: 0px;
 			padding-top: 0px;
-			width: 100%
+			width: 100%;
 			min-width:100%;
 		}		
 		.page-indent {
