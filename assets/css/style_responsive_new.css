@@ -283,13 +283,13 @@ input#submit-button:hover {
 .portfolio-item {
 	float: left;
 	height: 150px;
-    width: 200px;
-    margin: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cccccc;
-    position: relative;
-    display: inline; 
+	width: 200px;
+	margin: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	position: relative;
+	display: inline;
 }
 .underlines {
 	border-style: solid;
@@ -347,7 +347,8 @@ input#submit-button:hover {
 
     }
  /* Small devices have px sz from 640px to 768px */
- @media only screen and (max-width : 768px) {
+ /* must specify max and min width otherwise the media query styles flow down to 640px and mess it up! */
+ @media only screen and (min-width: 641px) and (max-width : 768px) {
 		body {
  			min-width: 100%;
  		}
@@ -382,7 +383,7 @@ input#submit-button:hover {
 			width: 35%;
 			float: right;
 			margin-left: 0px;
-			min-height: 100%;
+			/* min-height: 100%; */
 			height: auto;
 			min-height: 5%;
 			/* margin: auto; */
@@ -391,14 +392,14 @@ input#submit-button:hover {
 			/* min-width: 100%; */
 			padding: 20px 0 20px 0px;
 			display:  block;
-			min-height: 100%;
+			/* min-height: 100%; */
 			height: auto;
 			float: left;
 		}
 		#about, #portfolio, #contact {
-			float: right;
+			/* float: right; */
 			min-width: 15%;
-			min-height: 100%;
+			/* min-height: 100%; */
 			padding-top: 40px;
 		}
 /* right hand side bar with connection information */
@@ -461,13 +462,14 @@ input#submit-button:hover {
  		
 /* For portfolio.html */
 		#portfolio-content {
-				min-height: 1600px;
+				/*min-height: 1600px;*/
 				/* width: 100%; */
 				/* margin: auto; */
 				min-width: 100%;
 				padding-left: 0px;
 				padding-right: 0px;
 				height: auto;
+				min-height: 1100px;
 		}
 		#portfolio-content-section {
  			    height: auto;
@@ -476,18 +478,19 @@ input#submit-button:hover {
 		#my-portfolio{
 			width: 87%;
 			margin-right: 0px;
+			margin-left: 0px;
 			padding-right: 20px;
 			padding-left:  20px;
-			min-height: 1350px;
+			/* min-height: 1350px; */
 			margin-left: 20px;
 			height: auto;
 		}
 		#format-portfolio {
-				min-height: 1250px;
+				min-height: 720px;
 				/* min-width: 500px; */
 				width: 100%;
 				padding: 0px;
-				margin: auto;
+				margin: 0px;
 				height: auto;
 		}
  		
@@ -519,27 +522,20 @@ input#submit-button:hover {
 			margin-top: 0px;
 			padding-top: 0px;
 		}		
-		.portfolio-item {
-		  	width: 100%;
-		  	margin-left: 0px;
-		  	width: 90%;
-		  	display: block;
-		  	height: 200px;
-		  	width: 95%;
-		  	margin-left: 10px;
-		}
+
+		.portfolio-item {height: 200px;width: 250px;/* margin-right: 0px; */}
 
 		.portfolio-title {
-			width: 100%;
-			top: 130px;
+
 		}
 		.project {
 			display: none;
 		}
 		.project-640 {
 			display: block;
-			width: 100%;
-			height: 100%;
+			float: left;
+			height: 200px;
+			width: 250px;
 		}
 
 		.footer {
@@ -560,6 +556,7 @@ input#submit-button:hover {
  		}
  		/* IDs */
  		/* Header and Navigation sections */
+
 		#header {
     		position: static;
     		top: 0px;
@@ -568,13 +565,12 @@ input#submit-button:hover {
     		min-width: 100%;
     		/* min-width: 100%; */
     		position: static;
-    		min-height: 200px;
+    		min-height: 10%;
     		height: auto;
-    		}
+        }
 		#left-side-header {
 			min-width: 600px;
 			margin-right: 0px;
-			margin-left: 0px;
 			display: block;
 			min-width: 100%;
 			height: auto;
@@ -594,7 +590,7 @@ input#submit-button:hover {
 		}
 		#navigation {
 			min-width: 100%;
-			padding: 0px 0 20px 0px;
+			padding: 20px 0 20px 0px;
 			display:  block;
 			min-height: 100%;
 			height: auto;
@@ -604,6 +600,7 @@ input#submit-button:hover {
 			min-width: 28%;
 			min-height: 100%;
 		}
+
 /* right hand side bar with connection information */
 		#ways-to-connect{
 			padding-left: 30%;
