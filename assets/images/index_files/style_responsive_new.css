@@ -8,7 +8,8 @@ html, body {
 }
 body {
 	margin: 10px 10px 10px 10px;
-	min-width: 1200px;}
+	min-width: 1200px;
+}
 h1{
 	font-size: 30px;
 	font-weight: bold;
@@ -19,8 +20,7 @@ h2{
 	font-size: 25px;
 	font-weight: bold;
 	color: #4aaaa5;
-	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	
-	line-height: 3;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
 	text-align: center;
 	display: block;
 }
@@ -29,8 +29,7 @@ h3{
 	font-weight: bold;
 	color: #4aaaa5;
 	text-align: center;
-	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	
-	line-height: 3;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
 
 }
 h4{
@@ -76,11 +75,7 @@ p {
 	max-width: 100%;
 	float: left;
 }
-#right-side-header {
-
-	display: inline-block;
-	margin-left: 430px;
-}
+#right-side-header {display: inline-block;margin-left: 430px;}
 #main-logo{
 	width: 250px;
 	text-align: center;	
@@ -114,11 +109,10 @@ p {
 }
 #profile-img-640 {
 	display: none;
-	
 }
-
 #profile-img-768 {
 	display: none;
+	
 }
 #about-me {
 	max-height: 700px;
@@ -289,13 +283,13 @@ input#submit-button:hover {
 .portfolio-item {
 	float: left;
 	height: 150px;
-    width: 200px;
-    margin: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cccccc;
-    position: relative;
-    display: inline; 
+	width: 200px;
+	margin: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	position: relative;
+	display: inline;
 }
 .underlines {
 	border-style: solid;
@@ -346,8 +340,6 @@ input#submit-button:hover {
 	height: 4em;
 }
 
-
-
 /* media queries for responsive design */
 
 /* medium devices have px sz from 768px to 980px */
@@ -372,17 +364,19 @@ input#submit-button:hover {
     		display: none;
     	}
     	#profile-img-640{
+			/* width: 100%; */
+			/* height: 50%; */
 			display: none;
+			/* margin: 0px 20px 10px 0px; */
 			}
 		#profile-img {
 			display: none;
 		}
 		#profile-img-768{
 			display: block;
+			width: 100%;
 			margin-bottom: 20px;
 			background-color: white;
-			height: 20%;
-    		width: 100%;
 		}
 		#format-article {
 			margin-top: 0px;

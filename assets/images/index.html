@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///Users/FH/nw_bootcamp/Assignment_2/Responsive-Portfolio/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- added viewport meta tag for media queries -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- to reset browser inconsistencies I linked the reset.css file -->
+        <link type="text/css" rel="stylesheet" href="./index_files/reset.css"> 
+        <!-- added in some google fonts - put them before my style.css so that they are available use, but after the reset.html. -->
+        <link href="./index_files/css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="./index_files/style_responsive_new.css">
+    </head>
+    <body> <!-- added 10 px on left and right margins -->
+        <div class="wrapper"> <!--added wrapper class for sticky footer -->
+        <!-- divide the page into 5 sections: Main Logo, Navigation, Main Content, Connect, Footer -->
+            <header id="header"> <!-- 960px wide-->
+                <div class="page-indent" id="left-side-header"> <!-- 650px wide -->
+                    <div id="main-logo"> 
+                    <!--200px wide -->
+                        <h1>Fiona Hegarty</h1>
+                    </div>
+                </div>
+                <div id="right-side-header"> <!-- 270px wide -->
+                    <div id="navigation">
+                    <!--div's for naviagation buttons - these need to float-->
+                        <div id="about"><h5><a href="file:///Users/FH/nw_bootcamp/Assignment_2/Responsive-Portfolio/index.html">About</a></h5></div>
+                        <div id="portfolio"><h5><a href="file:///Users/FH/nw_bootcamp/Assignment_2/Responsive-Portfolio/portfolio.html">Portfolio</a></h5></div>
+                        <div id="contact"><h5><a href="file:///Users/FH/nw_bootcamp/Assignment_2/Responsive-Portfolio/contact.html">Contact</a></h5></div>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="page-indent content-section" id="bio-and-content-section"> <!--width 650px -->
+                    <div class="page-content-layout" id="about-me">
+                        <div class="underlines">
+                            <h2>About Me</h2>
+                        </div>
+                        
+                        <article id="format-article">
+                            <img src="./index_files/me_640.jpg" alt="Fiona Hegarty" id="profile-img-640">  
+                            <p id="article-p-1">Welcome! You are about to view my Web Development Portfolio, but first let me introduce myself. </p><br>
+                            <img src="./index_files/me_768.jpg" alt="Fiona Hegarty" id="profile-img-768">
+                            <img src="./index_files/me.jpg" alt="Fiona Hegarty" id="profile-img">
+                            <p>I am originally from Ireland and left in 2000 after completing my Masters Degree. I hold a Bachelor of Engineering and a Master of Management Science from the National University of Ireland, UCD, and a Bachelor of Science in Cloud Computing from Cork Regional Technical College, Ireland. I have spent the past 16 years both living and working around the world - London, Singapore, Dublin, Vilnius and Chicago, where I am currently based.</p><br>
+                            <p>I have recently moved into Web Development, having spent most of my career working in IT Production, in both Service Delivery and IT Projects.  I started my career as an IT Management Consultant with PricewaterhouseCoopers in London, after which I moved into the Investment Banking domain, where I worked for UBS in both London and Singapore.</p><br>
+                            <p>Now that you know a bit about me, please use the links at the top of the page to view my portfolio and contact me. I hope to hear from you in the future!</p><br>
+                        </article>
+                    </div>
+                </div>
+                <!-- margin of 40px: total 960px for main section -->
+                <aside id="connect-details"> <!--width 270px -->
+                        <div class="underlines" id="connect-title">
+                                <h3>Connect with Me</h3>
+                        </div>
+                        <div id="ways-to-connect">
+                                <div><a href="https://www.linkedin.com/in/fiona-hegarty-0090546"><img src="./index_files/linkedin.png" alt="LinkedIn" id="linkedin"></a></div>
+                                <div><a href="https://github.com/fionahm"><img src="./index_files/github.png" alt="GitHub" id="github"></a></div>
+                                <div><a href="mailto:fiona_hegarty@hotmail.com?Subject=Connect%20From%20Website"><img src="./index_files/email.png" alt="Email" id="other"></a></div>
+                        </div>
+                </aside>
+            </div>
+            <div class="push"></div>  <!--added push class for sticky footer -->
+        </div>
+        <div class="footer">  <!--added footer class for sticky footer --> 
+            <div id="footer-text"><h6>(c) Copyright 2016 Fiona Hegarty</h6></div>
+        </div>
+    
+
+
+</body></html>
